@@ -1,0 +1,44 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: {
+    family: $poppins;
+  }
+  margin: 0;
+  color: $cyan;
+}
+
+h1 {
+  font-size: 3em;
+  @include maxMedia(767) {
+    font-size: 2.2em;
+    line-height: 1.6;
+  }
+}
+
+h2 {
+  font-size: 3em;
+  @include maxMedia(767) {
+    font-size: 2em;
+    line-height: 1.6;
+  }
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  p {
+    @include maxMedia(767) {
+      width: 100%;
+    }
+    width: 550px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

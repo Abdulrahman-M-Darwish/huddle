@@ -1,0 +1,17 @@
+.header {
+  padding-top: $padding;
+  padding-bottom: $padding;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      img {
+        max-width: 100%;
+        @include maxMedia(767) {
+          width: 140px;
+        }
+      }
+    }
+  }
+}

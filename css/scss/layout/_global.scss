@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  @include prefixer(box-sizing, border-box, webkit moz ms o)
+}
+
+body {
+  font: {
+    family: $openSans;
+    size: $fontSize;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width: fit-content;
+}
+
+p {
+  color: $cyan;
+  font-size: $fontSize + 3.6px;
+  line-height: 1.6;
+}

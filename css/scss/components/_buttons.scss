@@ -1,0 +1,26 @@
+.button-border {
+  color: $pink;
+  border: 1px solid $pink;
+  padding: 8px 25px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: $duration;
+  &:hover {
+    color: $lightPink;
+    border-color: $lightPink;
+  }
+}
+
+.button {
+  background-color: $pink;
+  padding: 20px 80px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: $fontSize + 3px;
+  @include prefixer(transition, $duration, webkit moz ms o);
+  &:hover {
+    background-color: $lightPink;
+  }
+}
